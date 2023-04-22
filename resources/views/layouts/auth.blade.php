@@ -1,46 +1,43 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>{{ config('app.name') }} | Log in</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-    <link rel="icon" href="{{ url($setting->path_logo) }}" type="image/png">
+    <!-- Custom fonts for this template-->
+    <link href="{{asset('Sb/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/font-awesome/css/font-awesome.min.css') }}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('AdminLTE-2/dist/css/AdminLTE.min.css') }}">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="{{ asset('AdminLTE-2/plugins/iCheck/square/blue.css') }}">
+    <!-- Custom styles for this template-->
+    <link href="{{asset('Sb/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-    <!-- Google Font -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition login-page">
-    
+
+<body class="bg-gradient-primary" style="background-image: url({{asset('img/bglogin.jpg')}});">
     @yield('login')
 
-    <!-- jQuery 3 -->
-    <script src="{{ asset('AdminLTE-2/bower_components/jquery/dist/jquery.min.js') }}"></script>
-    <!-- Bootstrap 3.3.7 -->
-    <script src="{{ asset('AdminLTE-2/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    <!-- iCheck -->
-    <script src="{{ asset('AdminLTE-2/plugins/iCheck/icheck.min.js') }}"></script>
-    <!-- Validator -->
-    <script src="{{ asset('js/validator.min.js') }}"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{asset('Sb/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('Sb/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{{asset('Sb/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{{asset('Sb/js/sb-admin-2.min.js')}}"></script>
+  <!-- Validator -->
+  <script src="{{ asset('js/validator.min.js') }}"></script>
     <script>
         $(function () {
             $('input').iCheck({

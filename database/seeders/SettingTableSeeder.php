@@ -16,9 +16,9 @@ class SettingTableSeeder extends Seeder
     {
         DB::table('setting')->insert([
             'id_setting' => 1,
-            'nama_perusahaan' => 'Toko Ku',
-            'alamat' => 'Jl. Kibandang Samaran Ds. Slangit',
-            'telepon' => '081234779987',
+            'nama_perusahaan' => 'Revanis',
+            'alamat' => 'Jl. Sejahtera, Butulan RT02/23 Makamhaji, Kartasura, Sukoharjo, Jawa Tengah, Indonesia',
+            'telepon' => '089649191026',
             'tipe_nota' => 1, // kecil
             'diskon' => 5,
             'path_logo' => '/img/logo.png',
